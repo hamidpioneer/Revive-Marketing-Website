@@ -1,0 +1,197 @@
+@mixin box-shadow($depth:1) {
+  @if $depth==1 {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  } @else
+  if $depth==2 {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  } @else
+  if $depth==3 {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  } @else
+  if $depth==4 {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  } @else
+  if $depth==5 {
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+  }
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+@mixin bg-image() {
+  background-color: #ddd;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@mixin heading-underline {
+  @extend .horizontal-sep;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: $colorPrimaryDark;
+}
+@mixin colorGradient-Green-to-Yellow() {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#65ff65+0,ffc965+100 */
+  background: rgb(101,255,101); /* Old browsers */
+  background: -moz-linear-gradient(-45deg, rgba(101,255,101,1) 0%, rgba(255,201,101,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, rgba(101,255,101,1) 0%,rgba(255,201,101,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, rgba(101,255,101,1) 0%,rgba(255,201,101,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#65ff65', endColorstr='#ffc965',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+@mixin textGradient() {
+  @include colorGradient-Green-to-Yellow();
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+@mixin colorGradient-101{
+  background-image: linear-gradient(to top, #50cc7f 0%, #f5d100 100%) !important;
+}
+@mixin colorGradient-102{
+  background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%) !important;
+}
+
+//https://webgradients.com/
+@mixin colorGradient-WinterNeva{
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%) !important;
+}
+@mixin colorGradient-DustyGrass{
+  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%) !important;
+}
+@mixin colorGradient-HeavyRain{
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%) !important;
+}
+@mixin colorGradient-TemptingAzure{
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%) !important;
+}
+@mixin colorGradient-DeepBlue{
+  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%) !important;
+}
+@mixin colorGradient-MalibuBeach{
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%) !important;
+}
+@mixin colorGradient-CloudyKnoxville{
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%) !important;
+}
+@mixin colorGradient-NewLife{
+  background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%) !important;
+}
+@mixin colorGradient-TrueSunset{
+  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%) !important;
+}
+@mixin colorGradient-MorpheusDen{
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%) !important;
+}
+@mixin colorGradient-RareWind{
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%) !important;
+}
+@mixin colorGradient-NearMoon{
+  background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%) !important;
+}
+@mixin colorGradient-WildApple{
+  background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%) !important;
+}
+@mixin colorGradient-SaintPetersburg{
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%) !important;
+}
+@mixin colorGradient-AriellesSmile{
+  background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%) !important;
+}
+@mixin colorGradient-PlumPlate{
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+}
+@mixin colorGradient-EverlastingSky{
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%) !important;
+}
+@mixin colorGradient-HappyFisher{
+  background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%) !important;
+}
+@mixin colorGradient-Blessing{
+  background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%) !important;
+}
+@mixin colorGradient-SharpeyeEagle{
+  background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%) !important;
+}
+@mixin colorGradient-LemonGate{
+  background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%) !important;
+}
+@mixin colorGradient-StrongBliss{
+  background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%) !important;
+}
+@mixin colorGradient-SnowAgain{
+  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%) !important;
+}
+@mixin colorGradient-SoftGrass{
+  background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%) !important;
+}
+@mixin colorGradient-GrownEarly{
+  background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%) !important;
+}
+@mixin colorGradient-SharpGlass{
+  background: #C9CCD3;
+ background-image: linear-gradient(-180deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%) !important;
+ background-blend-mode: lighten !important;
+}
+@mixin colorGradient-LoveKiss{
+  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%) !important;
+}
+@mixin colorGradient-PremiumDark{
+  background-image: linear-gradient(to right, #434343 0%, black 100%) !important;
+}
+@mixin colorGradient-SummerGames{
+  background-image: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%) !important;
+}
+@mixin colorGradient-HiddenJaguar{
+  background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%) !important;
+}
+@mixin colorGradient-YoungGrass{
+  background-image: linear-gradient(to top, #9be15d 0%, #00e3ae 100%) !important;
+}
+@mixin colorGradient-MagicLake{
+  background-image: linear-gradient(to top, #d5dee7 0%, #ffafbd 0%, #c9ffbf 100%) !important;
+}
+@mixin colorGradient-HappyUnicorn{
+  background-image: linear-gradient(to top, #b3ffab 0%, #12fff7 100%) !important;
+}
+@mixin colorGradient-AfricanField{
+  background-image: linear-gradient(-45deg, #FFC796 0%, #FF6B95 100%) !important;
+}
+@mixin colorGradient-SolidStone{
+  background-image: linear-gradient(to right, #243949 0%, #517fa4 100%) !important;
+}
+@mixin colorGradient-GlassWater{
+  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%) !important;
+}
+@mixin colorGradient-SlickCarbon{
+  background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%) !important;
+ background-blend-mode: multiply !important;
+}
+@mixin colorGradient-MillenniumPine{
+  background-image: linear-gradient(to top, #50cc7f 0%, #f5d100 100%) !important;
+}
+@mixin colorGradient-HighFlight{
+  background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%) !important;
+}
+@mixin colorGradient-SunVeggie{
+  background-image: linear-gradient(-225deg, #20E2D7 0%, #F9FEA5 100%) !important;
+}
+@mixin colorGradient-AquaGuidance{
+  background-image: linear-gradient(to top, #007adf 0%, #00ecbc 100%) !important;
+}
+@mixin colorGradient-GrassShampoo{
+  background-image: linear-gradient(-225deg, #DFFFCD 0%, #90F9C4 48%, #39F3BB 100%) !important;
+}
+@mixin colorGradient-PremiumWhite{
+  background-image: linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%) !important;
+}
+@mixin colorGradient-SaltMountain{
+  background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%) !important;
+}
+@mixin colorGradient-FlyingLemon{
+  background-image: linear-gradient(60deg, #64b3f4 0%, #c2e59c 100%) !important;
+}
+@mixin colorGradient-FebruaryInk{
+  background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%) !important;
+}
+
+@mixin colorGradient-GreatWhale{
+  background-image: linear-gradient(to top, #a3bded 0%, #6991c7 100%) !important;
+}

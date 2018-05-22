@@ -1,0 +1,203 @@
+@import 'site-mixin';
+
+$colorBlack: #000;
+$colorWhite: #fff; // green
+$green-50: #E8F5E9;
+$green-100: #C8E6C9;
+$green-200: #A5D6A7;
+$green-300: #81C784;
+$green-400: #66BB6A;
+$green-500: #4CAF50;
+$green-600: #43A047;
+$green-700: #388E3C;
+$green-800: #2E7D32;
+$green-900: #1B5E20;
+$green-A100: #B9F6CA;
+$green-A200: #69F0AE;
+$green-A400: #00E676;
+$green-A700: #00C853; // yellow
+$yellow-50: #FFFDE7;
+$yellow-100: #FFF9C4;
+$yellow-200: #FFF59D;
+$yellow-300: #FFF176;
+$yellow-400: #FFEE58;
+$yellow-500: #FFEB3B;
+$yellow-600: #FDD835;
+$yellow-700: #FBC02D;
+$yellow-800: #F9A825;
+$yellow-900: #F57F17;
+$yellow-A100: #FFFF8D;
+$yellow-A200: #FFFF00;
+$yellow-A400: #FFEA00;
+$yellow-A700: #FFD600; // colors from matrial.io
+$colorPrimary: $green-500;
+$colorPrimaryLight: $green-200;
+$colorPrimaryDark: $green-800;
+$colorPrimaryAccent: $green-A200;
+$colorSecondary: $yellow-500;
+$colorSecondaryLight: $yellow-200;
+$colorSecondaryDark: $yellow-800;
+$colorSecondaryAccent: $yellow-A200; /* colors from ReviveJuice
+$colorPrimary: # 73bb40;
+$colorPrimaryDark: # 269603;
+$colorAccent: # fbb300;
+*/
+// Text colors
+$textDarkPrimary-LightBg: rgba(0,0,0,.87);
+$textDarkSecondary-LightBg: rgba(0,0,0,.54);
+$textDarkDisable-LightBg: rgba(0,0,0,.38);
+$dividerDark: rgba(0,0,0,.12);
+$textLightPrimary-DarkBg: rgba(255,255,255,1);
+$textLightSecondary-DarkBg: rgba(255,255,255,.7);
+$textLightDisable-DarkBg: rgba(255,255,255,.5);
+$dividerLight: rgba(255,255,255,.12); // Button colors
+$textIconDarkActive-LightBg: rgba(0,0,0,.54);
+$textIconDarkDisable-LightBg: rgba(0,0,0,.38);
+$textIconLightActive-DarkBg: rgba(255,255,255,1);
+$textIconLightDisable-DarkBg: rgba(255,255,255,.5); // Link colors
+$textLinkPrimary: $colorPrimary;
+$textLinkSecondary: $colorSecondaryAccent;
+$colorPlaceholder: $green-lighten-4;
+$colorDarkPrimary: rgba(0,0,0,.5);
+$colorLightPrimary: rgba(255,255,255,.5);
+$colorBorderPrimary: $colorPrimary;
+
+
+$colorBorderDark: $dividerDark;
+$colorBorderLight: $dividerLight;
+$colorDark-50: rgba(0,0,0,.5);
+$colorGrayLight: #fafafa;
+$colorBorderGray-50: rgba(255,255,255,.12);
+$colorPriceTag: red; /* text colors
+$textPrimary: # 36363d;
+$textSecondary: # 949eac;
+$textWhite: $ colorWhite;
+$textBlack: $ colorBlack;
+$textLink: $ colorPrimaryDark;
+*/
+$colorFacebook: #3b5999;
+$colorInstagram: #e4405f;
+$colorGoogle-plus: #d34836;
+// gradient colors
+.colorGradient-Yello-Black {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,ffeb3b+75,4caf50+100&0.5+0,0.5+76,0.75+100 */
+  background: -moz-linear-gradient(top, rgba(0,0,0,0.5) 0%, rgba(255,235,59,0.5) 75%, rgba(248,233,60,0.5) 76%, rgba(76,175,80,0.75) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0.5) 0%,rgba(255,235,59,0.5) 75%,rgba(248,233,60,0.5) 76%,rgba(76,175,80,0.75) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(255,235,59,0.5) 75%,rgba(248,233,60,0.5) 76%,rgba(76,175,80,0.75) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#bf4caf50',GradientType=0 ); /* IE6-9 */
+}
+
+.colorGradient-GreenLight-GreenDark {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4caf50+0,2e7d32+100&0.5+0,1+100 */
+  background: -moz-linear-gradient(top, rgba(76,175,80,0.5) 0%, rgba(46,125,50,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(76,175,80,0.5) 0%,rgba(46,125,50,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(76,175,80,0.5) 0%,rgba(46,125,50,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#804caf50', endColorstr='#2e7d32',GradientType=0 ); /* IE6-9 */
+}
+
+@mixin gradientColorPrimary-1() {
+  // diagonal : (0,0) to (1,1)
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#269603+0,fbb300+100&0.5+0,0.25+100 */
+  background: -moz-linear-gradient(-45deg, rgba(38,150,3,0.5) 0%, rgba(251,179,0,0.25) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, rgba(38,150,3,0.5) 0%,rgba(251,179,0,0.25) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, rgba(38,150,3,0.5) 0%,rgba(251,179,0,0.25) 100%) !important;
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#80269603', endColorstr='#40fbb300',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+}
+@mixin gradientColorPrimary-2() {
+  // diagonal (reverse color): (0,1) to (1,0)
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fbb300+0,269603+100&0.25+0,0.5+100 */
+  background: -moz-linear-gradient(45deg, rgba(251,179,0,0.25) 0%, rgba(38,150,3,0.5) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, rgba(251,179,0,0.25) 0%,rgba(38,150,3,0.5) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, rgba(251,179,0,0.25) 0%,rgba(38,150,3,0.5) 100%) !important;
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40fbb300', endColorstr='#80269603',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+@mixin gradientColorPrimary-3() {
+  // diagonal : (0,1) to (1,0)
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#269603+0,fbb300+100&0.5+0,0.25+100 */
+  background: -moz-linear-gradient(45deg, rgba(38,150,3,0.5) 0%, rgba(251,179,0,0.25) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, rgba(38,150,3,0.5) 0%,rgba(251,179,0,0.25) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, rgba(38,150,3,0.5) 0%,rgba(251,179,0,0.25) 100%) !important;
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80269603', endColorstr='#40fbb300',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+@mixin gradientColorPrimary-4() {
+  // diagonal (reverse color): (0,0) to (1,1)
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fbb300+0,269603+100&0.25+0,0.5+100 */
+  background: -moz-linear-gradient(-45deg, rgba(251,179,0,0.25) 0%, rgba(38,150,3,0.5) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, rgba(251,179,0,0.25) 0%,rgba(38,150,3,0.5) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, rgba(251,179,0,0.25) 0%,rgba(38,150,3,0.5) 100%) !important;
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40fbb300', endColorstr='#80269603',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.colorGradientPrimary-1 {
+  @include gradientColorPrimary-1();
+}
+.colorGradientPrimary-2 {
+  @include gradientColorPrimary-2();
+}
+.colorGradientPrimary-3 {
+  @include gradientColorPrimary-3();
+}
+.colorGradientPrimary-4 {
+  @include gradientColorPrimary-4();
+}
+
+.textGradient{
+  @include textGradient();
+}
+.colorGradient-101{
+  @include colorGradient-101();
+}
+.colorGradient-102{
+  @include colorGradient-102();
+}
+.colorGradient-NewLife{
+  @include colorGradient-NewLife();
+}
+.colorGradient-MalibuBeach{
+  @include colorGradient-MalibuBeach();
+}
+.colorGradient-TrueSunset{
+  @include colorGradient-TrueSunset();
+}
+.colorGradient-LemonGate{
+  @include colorGradient-LemonGate();
+}
+.colorGradient-SoftGrass{
+  @include colorGradient-SoftGrass();
+}
+.colorGradient-PremiumWhite{
+  @include colorGradient-PremiumWhite();
+}
+.colorGradient-GlassWater{
+  @include colorGradient-GlassWater();
+}
+.colorGradient-RareWind{
+  @include colorGradient-RareWind();
+}
+.colorGradient-SlickCarbon{
+  @include colorGradient-SlickCarbon();
+}
+.colorGradient-SaltMountain{
+  @include colorGradient-SaltMountain();
+}
+.colorGradient-FlyingLemon{
+  @include colorGradient-FlyingLemon();
+}
+.colorGradient-FebruaryInk{
+  @include colorGradient-FebruaryInk();
+}
+.colorGradient-GreatWhale{
+  @include colorGradient-GreatWhale();
+}

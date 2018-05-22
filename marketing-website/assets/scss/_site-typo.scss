@@ -1,0 +1,120 @@
+/* font-family
+
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+Arial, Helvetica, sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Fira Sans', sans-serif;
+font-family: 'Tangerine', cursive;
+font-family: 'Titan One', cursive;
+"Times New Roman", Georgia, serif;
+font-family: 'Righteous', cursive;
+
+*/
+body,
+html {
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  // font-family: 'Lato', sans-serif;
+  color: $textDarkPrimary-LightBg;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  color: $textDarkPrimary-LightBg;
+  font-size: 100%;
+  line-height: 1.5;
+}
+
+.site-btn-default {
+  font-size: 0.88rem !important;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  outline: 0;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.heading {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 200%;
+  line-height: 1.5;
+  padding: 0.25rem 0;
+  color: $colorPrimaryDark;
+  position: relative;
+  z-index: 1;
+}
+
+.heading-1 {
+  @extend .heading;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  @extend .horizontal-sep;
+  font-size: 275%;
+  font-weight: 700 !important;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.2;
+
+  &::after {
+    background-color: $colorBorderDark !important;
+    left: 50% !important;
+    transform: translate(-50%, 0) !important;
+  }
+}
+
+.heading-2 {
+  @extend .heading;
+  font-size: 300%;
+}
+
+.heading-3 {
+  @extend .heading;
+  font-size: 200%;
+}
+
+.heading-4 {
+  @extend .heading;
+  font-size: 100%;
+}
+
+.heading-5 {
+  @extend .heading;
+  font-size: 100%;
+  color: $textLightPrimary-DarkBg;
+}
+
+.sub-heading {
+  @extend .heading;
+  font-weight: 700;
+  font-size: 120%;
+  padding: 0.5rem;
+  color: $colorPrimaryDark;
+}
+
+.site-h2 {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  color: $colorPrimaryDark;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  font-size: 175%;
+  font-family: 'Raleway', sans-serif;
+}
