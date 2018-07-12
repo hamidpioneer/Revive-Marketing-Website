@@ -363,7 +363,7 @@ header {
   .tab-content {
     border-radius: 0.25rem;
     border-top: 0;
-    background: $colorGrayLight;
+    // background: $colorGrayLight;
 
     .bg-img-wrapper {
       .banner-wrapper {
@@ -879,6 +879,8 @@ footer {
 #menu-items {
   padding-top: 5rem;
   padding-bottom: 4rem;
+  background: #D3D8E8;
+  background: linear-gradient(white, #D3D8E8);
 
   .content-box-footer {
     background: #fafafa;
@@ -1228,7 +1230,18 @@ footer {
   }
 
   div#singleCategoryItem {
-    padding: 1rem 0 0;
+    padding: 1rem .5rem;
+    margin-bottom: 4rem;
+    position: relative;
+    &>div{
+      margin-bottom: 1rem;
+    }
+    #moreButton {
+      position: absolute;
+      bottom: -4rem;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }    
   }
 }
 // from menu-tab-section
@@ -2133,6 +2146,7 @@ section#apps-download-section .section-content-wrapper > .section-image {
     opacity: 0.5;
     border: 1px solid #fff;
     box-shadow: 2px 2px 8px 0 rgba(255,255,255,.12);
+    cursor: pointer;
   }
 
   .single-item-wrapper-1 {
@@ -2344,17 +2358,6 @@ section#apps-download-section .section-content-wrapper > .section-image {
 }
 // end Menu Section
 
-#menu-items div#singleCategoryItem {
-  padding-bottom: 4rem;
-  position: relative;
-}
-
-#menu-items div#singleCategoryItem div#moreButton {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, 0);
-}
 // start off-canvas-menu
 
 .off-canvas-menu {
@@ -2822,7 +2825,14 @@ section.off-canvas-area {
     display: flex;
     flex-flow: row nowrap;
     flex: 1 1 auto;
+    height: 100%;
+    border-radius: 0.125rem;
+    background: #fff !important;
     position: relative;
+    transition: all .3s ease-in-out;
+    &:hover{
+      top: -2px;
+    }
   }
 
   .single-menu-card .menu-image-container {
@@ -2896,6 +2906,7 @@ section.off-canvas-area {
     border: 1px solid rgba(0,0,0,.08);
     border-radius: 0.125rem;
     background: rgba(0,0,0,.04);
+    margin: 2px;
 
     &:hover {
       border: 1px solid rgba(0,0,0,.12);
@@ -3040,11 +3051,7 @@ section.off-canvas-area {
     border: 2px solid rgba(0,0,0,.12);
   }
 
-  .single-menu-card {
-    border-radius: 0.125rem;
-    background: #fff !important;
-    margin-top: 1rem !important;
-  }
+  
 
   .single-menu-card .menu-text-container .menu-details .recipe-wrapper {
     /* display:  flex; */

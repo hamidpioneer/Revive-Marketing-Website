@@ -1619,8 +1619,7 @@ header .hero-section video.video-intro {
         color: white !important; }
   .section-content-wrapper .tab-content {
     border-radius: 0.25rem;
-    border-top: 0;
-    background: #fafafa; }
+    border-top: 0; }
     .section-content-wrapper .tab-content .bg-img-wrapper .banner-wrapper {
       overflow: hidden !important; }
     .section-content-wrapper .tab-content .bg-img-wrapper .menu-banner-bg {
@@ -1986,7 +1985,9 @@ footer {
 
 #menu-items {
   padding-top: 5rem;
-  padding-bottom: 4rem; }
+  padding-bottom: 4rem;
+  background: #D3D8E8;
+  background: linear-gradient(white, #D3D8E8); }
   #menu-items .content-box-footer {
     background: #fafafa;
     display: flex;
@@ -2233,7 +2234,16 @@ footer {
   #menu-items .recipe-items {
     background: white; }
   #menu-items div#singleCategoryItem {
-    padding: 1rem 0 0; }
+    padding: 1rem .5rem;
+    margin-bottom: 4rem;
+    position: relative; }
+    #menu-items div#singleCategoryItem > div {
+      margin-bottom: 1rem; }
+    #menu-items div#singleCategoryItem #moreButton {
+      position: absolute;
+      bottom: -4rem;
+      left: 50%;
+      transform: translate(-50%, 0); }
 
 #contact-us .row.projects-list .col-md-4, #contact-us .hero-section .homepage-slides.owl-carousel.owl-theme .owl-stage-outer .owl-stage .owl-item .single-homepage-slide .projects-list.container .col-md-4, .hero-section .homepage-slides.owl-carousel.owl-theme .owl-stage-outer .owl-stage .owl-item .single-homepage-slide #contact-us .projects-list.container .col-md-4 {
   padding: 0 7.5px;
@@ -2859,7 +2869,8 @@ section#apps-download-section .section-content-wrapper > .section-image {
   top: 3rem;
   opacity: 0.5;
   border: 1px solid #fff;
-  box-shadow: 2px 2px 8px 0 rgba(255, 255, 255, 0.12); }
+  box-shadow: 2px 2px 8px 0 rgba(255, 255, 255, 0.12);
+  cursor: pointer; }
 #menu-items .single-item-wrapper-1 {
   height: 100%;
   display: flex;
@@ -3018,16 +3029,6 @@ section#apps-download-section .section-content-wrapper > .section-image {
             background: #fff;
             color: rgba(0, 0, 0, 0.87);
             font-weight: 700; }
-
-#menu-items div#singleCategoryItem {
-  padding-bottom: 4rem;
-  position: relative; }
-
-#menu-items div#singleCategoryItem div#moreButton {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, 0); }
 
 .off-canvas-menu {
   background: rgba(0, 0, 0, 0.84);
@@ -3237,7 +3238,13 @@ section.off-canvas-area {
   display: flex;
   flex-flow: row nowrap;
   flex: 1 1 auto;
-  position: relative; }
+  height: 100%;
+  border-radius: 0.125rem;
+  background: #fff !important;
+  position: relative;
+  transition: all .3s ease-in-out; }
+  #menu-items .single-menu-card:hover {
+    top: -2px; }
 #menu-items .single-menu-card .menu-image-container {
   max-width: 40%;
   min-width: 40%;
@@ -3290,7 +3297,8 @@ section.off-canvas-area {
   flex: 1 0 auto;
   border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 0.125rem;
-  background: rgba(0, 0, 0, 0.04); }
+  background: rgba(0, 0, 0, 0.04);
+  margin: 2px; }
   #menu-items .single-menu-card .menu-text-container .menu-footer-wrapper ul li:hover {
     border: 1px solid rgba(0, 0, 0, 0.12); }
   #menu-items .single-menu-card .menu-text-container .menu-footer-wrapper ul li.price-tag {
@@ -3391,10 +3399,6 @@ section.off-canvas-area {
 #menu-items .single-menu-card .menu-text-container .menu-details .recipe-wrapper ul.recipe-lists li .recipe-image-wrapper img {
   border-radius: 50% !important;
   border: 2px solid rgba(0, 0, 0, 0.12); }
-#menu-items .single-menu-card {
-  border-radius: 0.125rem;
-  background: #fff !important;
-  margin-top: 1rem !important; }
 #menu-items .single-menu-card .menu-text-container .menu-details .recipe-wrapper {
   /* display:  flex; */
   /* flex: 0 0 100%; */

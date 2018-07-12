@@ -104,7 +104,8 @@ function closeRecipeHover(soul) {
 
 
 // var dataScope = "data-api.txt";
-var dataScope = "https://revivejuice.co/admin/api/data.php";
+// var dataScope = "https://revivejuice.co/admin/api/data.php"; // from online API
+var dataScope = "../../data-api.txt"; // from local storage
 
 
 // start LoadCatagoryMenu
